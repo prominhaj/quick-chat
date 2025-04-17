@@ -24,7 +24,7 @@ app.prepare().then(() => {
     // Configure Socket.IO with CORS for development
     const io = new Server(httpServer, {
         cors: {
-            origin: dev ? ["http://localhost:3000"] : ["https://quick-chat-opal.vercel.app"],
+            origin: "*",
             methods: ["GET", "POST"],
             credentials: true
         }
