@@ -122,8 +122,7 @@ export function MessageList({ messages, currentUser, typingUsers, users, isTypin
                     <div key={`${group.senderId}-${groupIndex}`} className="space-y-2">
                         {/* Date separator if needed */}
                         {groupIndex === 0 || groupedMessages[groupIndex - 1].date !== group.date ? (
-                            <div className="flex items-center my-4">
-                                <Separator className="flex-grow" />
+                            <div className="text-center my-4">
                                 <span className="mx-2 text-xs text-gray-500 dark:text-gray-400">{group.date}</span>
                                 <Separator className="flex-grow" />
                             </div>
