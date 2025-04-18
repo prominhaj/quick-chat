@@ -24,7 +24,7 @@ export type DirectMessage = {
 export const getSocket = () => {
     if (!socket) {
         // Use environment variable or default to current host
-        const host = process.env.NEXT_PUBLIC_SOCKET_URL || window.location.origin
+        const host = process.env.NEXT_PUBLIC_APP_URL || window.location.origin
 
         console.log("Connecting to socket server:", host)
 
